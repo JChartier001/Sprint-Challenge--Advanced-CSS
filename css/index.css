@@ -181,6 +181,7 @@ p {
   justify-content: center;
   align-items: center;
   background-color: #F6F6F6;
+  opacity: 0.75;
   color: #454A59;
   width: 100%;
   margin: auto;
