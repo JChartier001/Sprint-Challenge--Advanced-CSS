@@ -1,28 +1,43 @@
 // Navigation code here
+
 .navigation {
     .column(center, center);
     background-color: @nav-bg;
     color: @nav-font;
-    width: 80%;
+    width: 100%;
     margin: auto;
     border: @nav-border;
-    padding: 2%;
+    padding-top: 2%;
+    position: fixed; 
+    top: 0; 
+    
 
-    h2{
+
+
+    @media @phone {
+        width: 100%;
+        .column(center, center);
+    }
+
+    h2 {
         padding-bottom: 1%;
         font-size: 4.5rem;
     }
 
-    nav{
-        width: 50%;        
+    nav {
+        width: 50%;
         .flex(space-between, center);
         padding: 1%;
         font-size: 2rem;
-        
-        a{
+
+        @media @phone {
+            width: 90%;
+        }
+
+
+        a {
             color: @nav-font;
             text-decoration: none;
         }
-
     }
 }

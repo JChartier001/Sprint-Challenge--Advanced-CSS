@@ -14,12 +14,28 @@
     align-items: @align;
 }
 
-.btn {
-    background-color: @btn-bg-color;
-    color: white;
+.btn(@background, @font) {
+    background-color: @background;
+    color: @font;
     width: 30%;
     padding: 3%;
     .flex (center, center);
     font-size: 2rem;
     border-radius: 5px;
+}
+.red{
+    border: 1px solid red;
+    }
+
+.orange {
+    border: 1px solid orange;
+}
+.yellow {
+    border: 1px solid yellow;
+}
+.green {
+    border: 1px solid green;
+}
+.blue{
+    border: 1px solid blue;
 }
