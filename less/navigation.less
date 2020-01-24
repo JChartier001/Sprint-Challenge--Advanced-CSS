@@ -1,1 +1,44 @@
 // Navigation code here
+
+.navigation {
+    .column(center, center);
+    background-color: @nav-bg;
+    opacity: 0.75;
+    color: @nav-font;
+    width: 100%;
+    margin: auto;
+    border: @nav-border;
+    padding-top: 2%;
+    position: fixed; 
+    top: 0; 
+    
+
+
+
+    @media @phone {
+        width: 100%;
+        .column(center, center);
+    }
+
+    h2 {
+        padding-bottom: 1%;
+        font-size: 4.5rem;
+    }
+
+    nav {
+        width: 50%;
+        .flex(space-between, center);
+        padding: 1%;
+        font-size: 2rem;
+
+        @media @phone {
+            width: 90%;
+        }
+
+
+        a {
+            color: @nav-font;
+            text-decoration: none;
+        }
+    }
+}
